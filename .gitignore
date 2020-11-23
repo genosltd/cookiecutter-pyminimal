@@ -8,3 +8,6 @@ activate.bat
 
 # pip
 *.egg-info
+
+# python
+__pycache__
