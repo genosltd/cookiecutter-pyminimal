@@ -1,0 +1,10 @@
+# Vim
+*.swp
+
+# venv
+venv
+activate
+activate.bat
+
+# pip
+*.egg-info
