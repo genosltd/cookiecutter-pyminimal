@@ -30,6 +30,9 @@ def venv_activate():
 def test_pip_install_pytest(cookies):
     result = cookies.bake(extra_context=dict(project_name='proba'))
 
+    assert result.exit_code == 0
+    assert result.exception is None
+
     venv.create(pathlib.Path(result.project) / 'venv', with_pip=True)
 
     pr = process(' && '.join((
