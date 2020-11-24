@@ -28,6 +28,14 @@ author = '{{ cookiecutter.full_name }}'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    # https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
+    'sphinx.ext.autodoc',
+
+    # https://www.sphinx-doc.org/en/master/usage/extensions/doctest.html
+    'sphinx.ext.doctest',
+
+    # https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
+    'sphinx.ext.napoleon',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

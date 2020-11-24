@@ -1,0 +1,12 @@
+# venv
+venv
+activate.bat
+activate
+
+# python
+__pycache__
+
+# Sphinx
+docs/make.bat
+docs/Makefile
+docs/_build
