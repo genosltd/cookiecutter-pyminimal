@@ -1,6 +1,6 @@
 # cookiecutter-pyminimal
 
-A minimalistic python project cookicutter template
+A minimalistic python project [cookiecutter](https://cookiecutter.readthedocs.io/) template
 
 ## Installation
 
