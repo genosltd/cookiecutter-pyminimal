@@ -18,12 +18,12 @@ def venv_activate():
 
 
 try:
-    print('Python virtual environment installing...', end=' ')
+    print('Python virtual environment installing...', end=' ', flush=True)
     venv.create('venv', with_pip=True,
                 prompt='{{ cookiecutter.project_slug }}')
     print('done.')
 
-    print('Pip installing requirements...', end=' ')
+    print('Pip installing requirements...', end=' ', flush=True)
     subprocess.run(' && '.join((
         venv_activate(),
         'pip install -q -e .[doc,test]',
@@ -32,7 +32,7 @@ try:
     )
     print('done.')
 
-    print('Sphinx project setting up...', end=' ')
+    print('Sphinx project setting up...', end=' ', flush=True)
     subprocess.run(' && '.join((
         venv_activate(),
         'sphinx-quickstart' +
