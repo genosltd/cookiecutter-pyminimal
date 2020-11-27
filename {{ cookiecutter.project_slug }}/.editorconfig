@@ -23,7 +23,7 @@ indent_size = 4
 indent_style = tab
 
 # 2 space indentation file types 
-[*.{json,yml,js}]
+[*.{json,yml,js,md,rst}]
 indent_style = space
 indent_size = 2
 
