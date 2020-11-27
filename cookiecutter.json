@@ -1,6 +1,7 @@
 {
   "full_name": "Genos Ltd",
   "email": "grazdorov@genos.hr",
+  "project_source": ["closed", "open"],
   "project_name": "Python Project Template",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "Python Project Template.",

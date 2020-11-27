@@ -57,4 +57,8 @@ discuss what you would like to change.
 Please make sure to update documentation and tests as appropriate.
 
 ## License
-All rights reserved.
+{% if cookiecutter.project_source == 'closed' %}
+[All rights reserved.](./LICENSE)
+{% else %}
+[MIT](./LICENSE)
+{% endif %}
