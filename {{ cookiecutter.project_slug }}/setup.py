@@ -13,7 +13,11 @@ here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 # Get the version from the VERSION file
-version = (here / 'VERSION').read_text(encoding='utf-8')
+for line in (here / 'VERSION').read_text(encoding='utf-8').splitlines():
+    if line.startswith('#'):
+        continue
+    version = line.strip()
+
 
 # Arguments marked as "Required" below must be included for upload to PyPI.
 # Fields marked as "Optional" may be commented out.
@@ -147,7 +151,9 @@ setup(
     #
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=[],  # Optional
+    install_requires=[
+        'importlib-metadata ~= 1.0 ; python_version < "3.8"',
+    ],  # Optional
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"

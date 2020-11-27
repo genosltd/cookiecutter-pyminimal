@@ -1,1 +1,7 @@
+# Single-source of package version
+# ================================
+# based on 4 and 5 in:
+#
+# https://packaging.python.org/guides/single-sourcing-package-version/
+#
 0.0.1
