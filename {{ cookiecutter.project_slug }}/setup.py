@@ -96,12 +96,11 @@ setup(
         'Topic :: Software Development :: Libraries',
 
         # Pick your license as you wish
-
-        {% if cookiecutter.project_source == 'closed' %}
+        {% if cookiecutter.project_source == 'closed' -%}
         'License :: Other/Proprietary License',
-        {% else %}
+        {%- else -%}
         'License :: OSI Approved :: MIT License',
-        {% endif %}
+        {%- endif %}
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate you support Python 3. These classifiers are *not*
